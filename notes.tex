@@ -1,0 +1,51 @@
+\documentclass{article}
+
+\usepackage{listings}
+\usepackage{graphicx}
+\usepackage{color} %red, green, blue, yellow, cyan, magenta, black, white
+\usepackage{amsfonts}
+\usepackage{mathtools}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{adjustbox}
+\usepackage{hyperref}
+\usepackage{float}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage[letterpaper, portrait, margin=1in]{geometry}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\usepackage[myheadings]{fullpage}
+\usepackage[T1]{fontenc}
+\usepackage{sectsty}
+\usepackage[acronym]{glossaries}
+
+\sloppy
+\definecolor{lightgray}{gray}{0.5}
+%
+% \newcommand{\HRule}[1]{\rule{\linewidth}{#1}}
+\input{include/functions.tex}
+\input{include/glossaries.tex}
+
+
+%-------------------------------------------------------------------------------
+% HEADER & FOOTER
+%-------------------------------------------------------------------------------
+\pagestyle{fancy}
+\fancyhf{}
+\setlength\headheight{15pt}
+\fancyhead[L]{Murat Ambarkutuk}
+\fancyhead[R]{Radio Wave Propagation Mechanisms}
+\fancyfoot[R]{Page \thepage~of~\pageref{LastPage}}
+%-------------------------------------------------------------------------------
+% TITLE PAGE
+%-------------------------------------------------------------------------------
+\makeglossaries
+\begin{document}
+\input{include/title.tex}
+\newpage
+\input{include/listsandtables.tex}
+\newpage
+\setcounter{page}{1}
+\input{include/section1.tex}
+\end{document}
