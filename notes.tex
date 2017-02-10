@@ -19,6 +19,7 @@
 \usepackage[T1]{fontenc}
 \usepackage{sectsty}
 \usepackage[acronym]{glossaries}
+\usepackage{cleveref}
 
 \sloppy
 \definecolor{lightgray}{gray}{0.5}
@@ -43,9 +44,10 @@
 \makeglossaries
 \begin{document}
 \input{include/title.tex}
-\newpage
+\input{include/abstract.tex}
 \input{include/listsandtables.tex}
-\newpage
 \setcounter{page}{1}
 \input{include/section1.tex}
+\input{include/section2.tex}
+\input{include/section3.tex}
 \end{document}
