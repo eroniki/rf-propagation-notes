@@ -1,2 +1,90 @@
-\section{Indoor Radio Wave Propagation Models}
+\section{Fundamentals of Radio Wave Propagation}
+\label{sec:fundradioprop}
+This section will briefly describe the fundamentals of radio waves and their propagation mechanisms.
+In order to describe radio waves, the \gls{em} waves should be described since radio waves are a small subset of \gls{em} waves.
+When electrons move through a conductor medium, they create \gls{em}  waves that can propagate through in space.
+These waves can display different characteristics depending on the fundamental properties of the wave,  i.e.\ their wavelength.
+\Cref{fig:emspectrum} depicts the \gls{em} spectrum as a function of wavelength ($\lambda$) and frequency ($f$).
+\showFigure{img/em_spectrum.jpg}{\linewidth}{Electromagnetic Spectrum}{emspectrum}
+
+As it can be seen in \Cref{fig:emspectrum}, not only does radio waves form the lowest frequency band of the spectrum, but it also contains the most diverse frequency range amongst other \gls{em} bands.
+This diversity given a rise to a need of subdividing the radio wave band into smaller bands due to the fact that the waves display significantly difference physics.
+Thus, the radio waves was subcategorized into smaller bands by different standards.
+However, one of the most common standard was formed by \gls{ieee}~\cite{bruder2003ieee}.
+\Cref{tab:radiofreqITU} and \cref{tab:radiofreqIEEE} tabulate the categories proposed by \gls{itu} and \gls{ieee}, respectively.
+
+\begin{table}[ht]
+    \centering
+    \begin{tabular}{ | c | c | c | c |  } \hline
+      Band Number & Symbols & Frequency Band & Wavelength Range \\ \hline
+      4 & \gls{vlf} & 3 to 30 kHz & 10 to 100 km\\
+      5 & \gls{lf} & 30 to 300 kHz & 1 to 10 km\\
+      6 & \gls{mf} & 300 to 3000 kHz & 100 to 1000 m\\
+      7 & \gls{hf} & 3 to 30 MHz & 10 to 100 m\\
+      8 & \gls{vhf} & 30 to 300 MHz & 1 to 10 m\\
+      9 & \gls{uhf} & 300 to 3000 MHz & 100 to 1000 cm\\
+      10 & \gls{shf} & 3 to 30 GHz & 10 to 100 cm\\
+      11 & \gls{ehf} & 30 to 300 GHz & 1 to 10 cm\\
+      12 & \gls{thf} & 300 to 3000 GHz & 0.1 to 1 mm\\ \hline
+    \end{tabular}
+    \label{tab:radiofreqITU}
+    \caption{Radio Wave Channel Divisions by ITU}
+\end{table}
+
+\begin{table}[ht]
+    \centering
+    \begin{tabular}{ | c | c | c | } \hline
+        Band Designation & Frequency Band & Wavelength Range \\ \hline
+        \gls{hf} & 3 to 30 kHz & 10 to 100 km\\
+        \gls{vhf} & 30 to 300 kHz & 1 to 10 km\\
+        \gls{uhf} & 300 to 3000 kHz & 100 to 1000 m\\
+        L Band & 3 to 30 MHz & 10 to 100 m\\
+        S Band & 30 to 300 MHz & 1 to 10 m\\
+        C Band & 300 to 3000 MHz & 100 to 1000 cm\\
+        X Band & 3 to 30 GHz & 10 to 100 cm\\
+        $K_u$ Band & 30 to 300 GHz & 1 to 10 cm\\
+        K Band & 30 to 300 GHz & 1 to 10 cm\\
+        $K_a$ Band & 30 to 300 GHz & 1 to 10 cm\\
+        V Band & 30 to 300 GHz & 1 to 10 cm\\
+        W Band & 30 to 300 GHz & 1 to 10 cm\\
+        G Band (mm) & 30 to 300 GHz & 1 to 10 cm\\ \hline
+    \end{tabular}
+    \label{tab:radiofreqIEEE}
+    \caption{Radio Wave Channel Divisions by \gls{ieee}}
+\end{table}
+
+% Amongst various applications, the radio waves were prominently formed the basis of the wireless communication technologies.
+
+\subsection{Radio Wave Propagation Mechanisms}
+\subsubsection{Reflection}
+\subsubsection{Diffraction}
+\subsubsection{Scattering}
+
+
+
+\subsection{Path Loss, Shadowing and Fading}
+\gls{tx}~\gls{rx}
+Path loss is caused by dissipation of the power radiated by the transmitter as well as effects of the propagation channel.
+Path loss models generally assume that path loss is the same at a given transmit-receive distance1.
+Shadowing is caused by obstacles between the transmitter and receiver that absorb power.
+When the obstacle absorbs all the power, the signal is blocked.
+
+Variation due to path loss occurs over very large distances (100 -- 1000 meters), whereas variation due to shadowing occurs over distances proportional to the length of the obstructing object (10-100 meters in outdoor environments and less in indoor environments).
+Since variations due to path loss and shadowing occur over relatively large distances, this variation is sometimes refered to as \textbf{large-scale propagation effects} or \textbf{local mean attenuation}.
+
+% \subsection{Overview of Wireless Communication Technologies}
+% Explanations about the current technologies.
+% \subsubsection{Cellular Telephone Systems}
+% \subsubsection{Cordless Phones}
+% \subsubsection{Cellular Telephone Systems}
+% \subsubsection{Wireless LANs}
+% \subsubsection{Wide Area Wireless Data Services}
+% \subsubsection{Fixed Wireless Access}
+% \subsubsection{Paging Systems}
+% \subsubsection{Satellite Networks}
+% \subsubsection{Bluetooth}
+% \subsubsection{HomeRF}
+\subsection{Indoor Radio Wave Propagation Models}
+
+
 \pagebreak

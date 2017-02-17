@@ -20,6 +20,7 @@
 \usepackage{sectsty}
 \usepackage[acronym]{glossaries}
 \usepackage{cleveref}
+\usepackage[numbers]{natbib}
 
 \sloppy
 \definecolor{lightgray}{gray}{0.5}
@@ -45,9 +46,14 @@
 \begin{document}
 \input{include/title.tex}
 \input{include/abstract.tex}
+% \input{include/acknowledgement.tex}
 \input{include/listsandtables.tex}
 \setcounter{page}{1}
 \input{include/section1.tex}
 \input{include/section2.tex}
 \input{include/section3.tex}
+% \input{include/section4.tex}
+
+\bibliographystyle{plainnat}
+\bibliography{bib/refs}
 \end{document}
